@@ -100,15 +100,6 @@
                 $("#docThem").hide();
                 $("#btnDocThem").show();
             })
-            $("#slsp").change(function() {
-                let sl = $("#slsp").val();
-                let gia = 32990000;
-                if (!(sl == "")) {
-                    $("#tongTien").html(formatCurrency(gia * sl));
-                } else {
-                    $("#tongTien").html(formatCurrency(gia));
-                }
-            })
         })
     </script>
 </head>

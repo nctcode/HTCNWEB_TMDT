@@ -76,31 +76,6 @@
             size: 10px;
         }
     </style>
-    <script>
-        $(document).ready(function() {
-            function formatCurrency(number) {
-                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            }
-            $("#docThem").hide();
-            $("#btnDocThem").click(function() {
-                $("#btnDocThem").hide();
-                $("#docThem").show();
-            })
-            $("#btnThuGon").click(function() {
-                $("#docThem").hide();
-                $("#btnDocThem").show();
-            })
-            $("#slsp").change(function() {
-                let sl = $("#slsp").val();
-                let gia = 32990000;
-                if (!(sl == "")) {
-                    $("#tongTien").html(formatCurrency(gia * sl));
-                } else {
-                    $("#tongTien").html(formatCurrency(gia));
-                }
-            })
-        })
-    </script>
 </head>
 
 <body>
