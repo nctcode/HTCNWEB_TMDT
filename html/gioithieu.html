@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo/icon.png">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ft.css">
+    <style>
+        .dropdown-menu {
+            border-radius: 20px;
+            display: none;
+            border: 1px solid rgb(207, 207, 207);
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            display: flex;
+        }
+        
+        .dropdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .dropdown-item:hover {
+            border-radius: 15px;
+            background-color: #cccecc;
+            font-weight: bolder;
+        }
+        
+        #danhmuc img:hover {
+            border: 4px dotted red;
+            padding: 8px;
+        }
+        
+        #danhmuc a {
+            border: none;
+        }
+        
+        .product-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        #link-path a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #link-path a:hover {
+            color: red;
+        }
+        
+        .dropdown-menu li h5 {
+            margin: 10px;
+            font-size: small;
+            size: 15px;
+        }
+        
+        .dropdown-menu li p {
+            font-size: small;
+            size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-sm-12 mx-auto d-flex flex-column flex-sm-row align-items-center border">
+                <div class="col-sm-8 p-3 text-center text-sm-start">
+                    <a id="logo" href="trangchu.html">
+                        <img src="../img/logo/logosantot.png" width="220px" height="150px" style="margin-left: 170px; margin-top: 10px;">
+                    </a>
+                </div>
+                <div class="col-auto mt-2 p-3">
+                    <button type="button" class="btn d-flex m-2 border-0">
+                        <a href="#" class="btn border-0 btn-outline-secondary">
+                            <img src="../img/logo/logo1.png" width="30px" height="30px" class="m-0">
+                            <span class="text-danger fw-bolder" style="margin-left: 10px; font-size: larger;">Đăng ký Đại Lý</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="col-2 p-3 mb-2" style="margin-left: -35px;">
+                    <button class="btn btn-danger mt-3">
+                        <a href="tel:0706417103" class="btn text-white fw-bold">
+                            <img src="../img/logo/dt.jpg" alt="" class="rounded-circle"> 0706.417.103
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(48, 48, 48);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand-lg">
+                <button class="navbar-toggler accordion-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-wrap align-items-center justify-content-center gap-2 mx-5">
+                        <li class="nav-item mx-0 dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white btn-close-white btn btn-outline-danger" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DANH MỤC SẢN PHẨM</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sannhuahemkhoa.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/anh-san-nhua-hem-khoa-0-1-251x169.jpg" alt="Sàn nhựa hèm khóa" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa hèm khóa</h5>
+                                        <p>569 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sannhuagiago.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/san-nhua-gia-go1-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa giả gỗ</h5>
+                                        <p>342 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sangocongnghiep.html">
+                                        <img width="100px" height="100px" height="120" src="../img/danhmuc/san-go-cong-nghiep-c-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ công nghiệp</h5>
+                                        <p>136 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sangotunhien.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/san-go-tu-nhien-3-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ tự nhiên</h5>
+                                        <p>11 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <br>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sannhuadankeo.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/san-nhua-dan-keo-dep-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa dán keo</h5>
+                                        <p>242 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sannhuatudan.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/san-nhua-tu-dinh-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa tự dán</h5>
+                                        <p>117 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/sangonhuangoaitroi.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/san-nhua-hem-khoa-dulux-tile-14-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ nhựa ngoài trời</h5>
+                                        <p>26 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="danhmucSP/tamnhuaoptuong.html">
+                                        <img width="100px" height="100px" src="../img/danhmuc/anh-tam-nhua-op-tuong-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Tấm nhựa ốp tường</h5>
+                                        <p>129 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="trangchu.html" class="nav-link text-white btn btn-outline-danger">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="gioithieu.html" class="nav-link text-white btn btn-outline-danger">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#" class="nav-link text-white btn btn-outline-danger">SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#" class="nav-link text-white btn btn-outline-danger">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mx-3">
+                            <button type="submit" class="btn border-0 btn-outline-light">
+                                <img src="../img/logo/seach.jpg" alt="" class="rounded-2" width="30px">
+                            </button>
+                            <input placeholder="Tìm kiếm sản phẩm..." class="form-control ms-2">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-danger">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-danger">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
+            <p class="m-0 p-0">
+                <a href="trangchu.html">Trang chủ</a> /
+                <a href="../html/gioithieu.html">Giới thiệu</a>
+            </p>
+        </div>
+        <div class="row col-10 mx-auto main-intro">
+            <h2 class="mb-4">Trang web bán sàn nhựa, sàn gỗ trực tuyến</h2>
+            <div class="col">
+                <h4>Được thực hiện bởi <b class="text-danger">sinh viên</b></h4>
+                <p>Nguyễn Chí Thuận - 22685781</p>
+                <p>Lớp: DHHTTT18B</p>
+                <p>Khoa Công nghệ thông tin</p>
+            </div>
+            <div class="col">
+                <h4 class="mb-4">Mục đích</h4>
+                <p class="fw-bold">Bài tập lớn Môn Hệ Thông Và Công Nghệ Web (2024-2025)</p>
+                <p>Học hỏi và trau dồi kinh nghiệm xây dựng web</p>
+            </div>
+            <div>
+                <h4>Trang web được lấy ý tưởng và dữ liệu dựa trên website <a href="https://vansannhua.com/">vansannhua.com</a></h4>
+                <img src="../img/logo/web.png" width="90%" class="row mx-auto">
+            </div>
+            <div>
+                <h4>Tài liệu tham khảo</h4>
+                <ul class="taiLieu">
+                    <li><a href="https://www.w3schools.com/html/">W3schools - Tài liệu HTML</a></li>
+                    <li><a href="https://www.w3schools.com/css/">W3scholls - Tài liệu CSS</a></li>
+                    <li><a href="https://getbootstrap.com/docs/5.2/">Bootstrap - Tài liệu Bootstrap 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="row bg-secondary-subtle">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div class="row footer-intro ms-1 mt-3">
+                    <div class="col-2"><img src="../img/logo/logosantot.png"></div>
+                    <div class="col-4 me-5">
+                        <h5 class="row p-0 m-0 mb-3">Địa chỉ</h5>
+                        <p class="m-0">964D Lò Gốm, Phường 8, Quận 6, Tp.Hồ Chí Minh</p>
+                        <p class="m-0">Liên hệ: 0706.417.103</p>
+                        <p class="m-0">Email: thuan29032004@gmail.com</p>
+                    </div>
+                    <div class="col-3">
+                        <h5 class="row p-0 m-0 mb-3">Về chúng tôi</h5>
+                        <a href="gioithieu.html">Giới thiệu</a>
+                    </div>
+                    <div class="col-2 m-0">
+                        <h5 class="row p-0 m-0 mb-3">Kết nối với chúng tôi</h5>
+                        <a href="https://www.instagram.com/cthuannn/" class="me-2"><img src="../img/logo/logoinsta.png" width="50px"></a>
+                        <a href="https://zalo.me/0706417103" class="me-2"><img src="../img/logo/logozalo.png" width="70px"></a>
+                        <a href="https://www.messenger.com/t/7425115730861463" class="me-2"><img src="../img/logo/logomess.png" width="50px"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    .sp-main {
+        border-bottom: 4px solid rgb(233, 233, 233);
+    }
+    
+    .sp-main .img-main {
+        width: 450px;
+    }
+    
+    .thongTinSP {
+        border-left: 4px solid rgb(233, 233, 233);
+    }
+    
+    .thongTinSP a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .thongTinSP a:hover {
+        color: red;
+    }
+    
+    #gia p {
+        width: 200px;
+        font-size: 20px;
+        margin-right: 80px;
+    }
+    
+    #gia span {
+        font-size: 18px;
+    }
+    
+    table tr td:last-child {
+        font-weight: bold;
+    }

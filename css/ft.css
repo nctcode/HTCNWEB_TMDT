@@ -1,0 +1,96 @@
+/* footer */
+
+#footer-main {
+    position: relative;
+    margin: 30px 0;
+    padding: 20px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1), -3px -3px 8px rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+}
+
+#footer-main p {
+    margin-left: 29px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#footer-title {
+    position: absolute;
+    left: 70px;
+    top: 18px;
+}
+
+#footer-title h1,
+#footer-title h2 {
+    display: inline-flex;
+}
+
+.footer-intro {
+    text-align: start;
+    color: rgb(0, 0, 0);
+}
+
+#footer-intro p {
+    color: #333;
+    font-size: 13.5px;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+footer img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 8px;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.footer-intro h5 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-intro .col-2 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.footer-intro .col-2 img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+.footer-intro .col-4 p {
+    margin: 5px 0;
+}
+
+.footer-intro .col-3 a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-intro .col-2 a img {
+    margin: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-intro .col-2 a img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(130, 132, 132, 0.5));
+}

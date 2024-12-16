@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sàn nhựa dán keo Galaxy FS2105
+    </title>
+    <link rel="icon" type="image/x-icon" href="../../../img/logo/icon.png">
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/ft.css">
+    <link rel="stylesheet" href="../../../css/chitietSP.css">
+    <style>
+        [class*=col-] {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .dropdown-menu {
+            border-radius: 20px;
+            display: none;
+            border: 1px solid rgb(207, 207, 207);
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            display: flex;
+        }
+        
+        .dropdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .dropdown-item:hover {
+            border-radius: 15px;
+            background-color: #cccecc;
+            font-weight: bolder;
+        }
+        
+        #danhmuc img:hover {
+            border: 4px dotted red;
+            padding: 8px;
+        }
+        
+        #danhmuc a {
+            border: none;
+        }
+        
+        .product-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        #link-path a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #link-path a:hover {
+            color: red;
+        }
+        
+        .product-description ul {
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        
+        .product-description ul li::before {
+            content: "- ";
+        }
+        
+        .dropdown-menu li h5 {
+            margin: 10px;
+            font-size: small;
+            size: 15px;
+        }
+        
+        .dropdown-menu li p {
+            font-size: small;
+            size: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function() {
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function() {
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function() {
+                let sl = $("#slsp").val();
+                let gia = 32990000;
+                if (!(sl == "")) {
+                    $("#tongTien").html(formatCurrency(gia * sl));
+                } else {
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-sm-12 mx-auto d-flex flex-column flex-sm-row align-items-center border">
+                <div class="col-sm-8 p-3 text-center text-sm-start">
+                    <a id="logo" href="../../trangchu.html">
+                        <img src="../../../img/logo/logosantot.png" width="220px" height="150px" style="margin-left: 170px; margin-top: 10px;">
+                    </a>
+                </div>
+                <div class="col-auto mt-2 p-3">
+                    <button type="button" class="btn d-flex m-2 border-0">
+                        <a href="#" class="btn border-0 btn-outline-secondary">
+                            <img src="../../../img/logo/logo1.png" width="30px" height="30px" class="m-0">
+                            <span class="text-danger fw-bolder" style="margin-left: 10px; font-size: larger;">Đăng ký Đại Lý</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="col-2 p-3 mb-2" style="margin-left: -35px;">
+                    <button class="btn btn-danger mt-3">
+                        <a href="tel:0706417103" class="btn text-white fw-bold">
+                            <img src="../../../img/logo/dt.jpg" alt="" class="rounded-circle"> 0706.417.103
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(48, 48, 48);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand-lg">
+                <button class="navbar-toggler accordion-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-wrap align-items-center justify-content-center gap-2 mx-5">
+                        <li class="nav-item mx-0 dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white btn-close-white btn btn-outline-danger" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DANH MỤC SẢN PHẨM</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sannhuahemkhoa.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/anh-san-nhua-hem-khoa-0-1-251x169.jpg" alt="Sàn nhựa hèm khóa" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa hèm khóa</h5>
+                                        <p>569 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sannhuagiago.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/san-nhua-gia-go1-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa giả gỗ</h5>
+                                        <p>342 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sangocongnghiep.html">
+                                        <img width="100px" height="100px" height="120" src="../../../img/danhmuc/san-go-cong-nghiep-c-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ công nghiệp</h5>
+                                        <p>136 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sangotunhien.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/san-go-tu-nhien-3-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ tự nhiên</h5>
+                                        <p>11 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <br>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sannhuadankeo.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/san-nhua-dan-keo-dep-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa dán keo</h5>
+                                        <p>242 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sannhuatudan.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/san-nhua-tu-dinh-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn nhựa tự dán</h5>
+                                        <p>117 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/sangonhuangoaitroi.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/san-nhua-hem-khoa-dulux-tile-14-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Sàn gỗ nhựa ngoài trời</h5>
+                                        <p>26 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../../danhmucSP/tamnhuaoptuong.html">
+                                        <img width="100px" height="100px" src="../../../img/danhmuc/anh-tam-nhua-op-tuong-251x169.jpg" class="rounded-circle">
+                                        <h5 class="fw-bolder">Tấm nhựa ốp tường</h5>
+                                        <p>129 SẢN PHẨM</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="trangchu.html" class="nav-link text-white btn btn-outline-danger">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="gioithieu.html" class="nav-link text-white btn btn-outline-danger">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#" class="nav-link text-white btn btn-outline-danger">SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a href="#" class="nav-link text-white btn btn-outline-danger">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center mx-3">
+                            <button type="submit" class="btn border-0 btn-outline-light">
+                                <img src="../../../img/logo/seach.jpg" alt="" class="rounded-2" width="30px">
+                            </button>
+                            <input placeholder="Tìm kiếm sản phẩm..." class="form-control ms-2">
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../taikhoan/dangky.html" class="btn btn-danger">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../taikhoan/dangnhap.html" class="btn btn-danger">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="link-path" class="row col-10 mx-auto border-bottom border-1">
+            <p class="m-0 p-0">
+                <a href="../../trangchu.html">Trang chủ</a> /
+                <a href="../../trangchu.html">Danh mục</a> /
+                <a href="../../danhmucSP/sannhuadankeo.html">Sàn nhựa dán keo</a> /
+                <a href="GalaxyFS2105.html">Sàn nhựa dán keo Galaxy FS2105
+                </a>
+            </p>
+        </div>
+        <div class="row col-10 mx-auto my-3 border-bottom border-1">
+            <h4><b>Sàn nhựa dán keo Galaxy FS2105</b></h4>
+        </div>
+        <div class="row col-10 mx-auto text-dark">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col-sm-5">
+                        <img src="../../../img/SP/dankeo/San-nhua-Galaxy-FS2105-268x300.png" class="img-main w-75">
+                    </div>
+                    <div class="col-sm-7" id="gia">
+                        <p class="btn btn-danger">Giá mới: <br> 185,000/m2</p>
+                        <span>GIÁ CŨ: <s>200,000/m2</s></span>
+                        <div class="">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>XUẤT XỨ</td>
+                                    <td>Việt Nam
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>KÍCH THƯỚC</td>
+                                    <td>455x455x3 mm
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>BỀ MẶT</td>
+                                    <td>Vân thảm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>BẢO HÀNH</td>
+                                    <td>10 năm</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row my-5">
+                    <h4 style="color: rgb(168, 10, 10);">Thông tin chi tiết sản phẩm</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <h5>Thương hiệu: <span style="color: red;">Galaxy</span></h5>
+                    <h5>Dòng sản phẩm: <span style="color: red;">Sàn nhựa dán keo 3mm, sàn nhựa vân thảm, sàn nhựa Vinyl</span></h5>
+
+                    <br>
+                    <br>
+
+                    <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <img src="../../../img/SP/dankeo/San-nhua-Galaxy-FS2105-268x300.png" style="width: 70%; display: block;" class="mx-auto">
+                    <p>Sàn nhựa Galaxy FS2105 thuộc sàn nhựa vân thảm cao cấp, kích thước (L x W x H): 455mm x 455mm x 3mm. <br> Ván sàn nhựa đa dạng về màu sắc họa tiết . Sàn nhựa dán keo chính hãng không thấm nước, không mối mọt, không cong vênh co ngót,
+                        chống cháy, chống trơn trượt. Khó bị tác động bởi nước tẩy.</p>
+                    <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col-3 ms-1">
+                <h4 class="m-3">DANH MỤC SẢN PHẨM</h4>
+                <div class="border-bottom">
+                    <a href="#" class="m-5">Sàn nhựa dán keo Galaxy<br><br></a>
+                </div>
+                <div>
+                    <p class="m-3 fw-bold"><br>Sản phẩm bán chạy</p>
+                    <table class="table">
+                        <tr class="border-bottom">
+                            <td>
+                                <a href="../hemkhoa/EcoClick810.html"><img src="../../../img/SP/hemkhoa/San-nhua-EcoClick-810-a-300x256.jpg" alt=""></a>
+                            </td>
+                            <td>
+                                <a href="../hemkhoa/EcoClick810.html">Sàn nhựa EcoClick 810 (5mm) <br> <br>
+                                <p style="color: rgb(203, 9, 9);">295,000/m2</p><s>395,000/m2</s></a>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <a href="../tudan/CTCFloor014.html"><img src="../../../img/SP/tudan/San-nhua-CTC-Floor-014-300x237.jpg" alt=""></a>
+                            </td>
+                            <td><a href="../tudan/CTCFloor014.html">Sàn nhựa CTC Floor 014 <br> <br>
+                                <p style="color: rgb(203, 9, 9);">85,000/m2</p><s>150,000/m2</s></a></td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <a href="../tudan/CTCFloor016.html"><img src="../../../img/SP/tudan/San-nhua-CTC-Floor-016-300x238.jpg" alt=""></a>
+                            </td>
+                            <td><a href="../tudan/CTCFloor016.html">Sàn nhựa CTC Floor 016 <br> <br>
+                                <p style="color: rgb(203, 9, 9);">85,000/m2</p><s>150,000/m2</s></a></td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <a href="../congnghiep/SharkM08.html"><img src="../../../img/SP/congnghiep/san-go-cong-nghiep-cot-xanh-shark-m08-300x206.jpg" alt=""></a>
+                            </td>
+                            <td><a href="../congnghiep/SharkM08.html">Sàn gỗ Shark cốt xanh M08 <br> <br>
+                                <p style="color: rgb(203, 9, 9);">395,000/m2</p><s>580,000/m2</s></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer class="row bg-secondary-subtle">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div class="row footer-intro ms-1 mt-3">
+                    <div class="col-2"><img src="../../../img/logo/logosantot.png"></div>
+                    <div class="col-4 me-5">
+                        <h5 class="row p-0 m-0 mb-3">Địa chỉ</h5>
+                        <p class="m-0">964D Lò Gốm, Phường 8, Quận 6, Tp.Hồ Chí Minh</p>
+                        <p class="m-0">Liên hệ: 0706.417.103</p>
+                        <p class="m-0">Email: thuan29032004@gmail.com</p>
+                    </div>
+                    <div class="col-3">
+                        <h5 class="row p-0 m-0 mb-3">Về chúng tôi</h5>
+                        <a href="../../gioithieu.html">Giới thiệu</a>
+                    </div>
+                    <div class="col-2 m-0">
+                        <h5 class="row p-0 m-0 mb-3">Kết nối với chúng tôi</h5>
+                        <a href="https://www.instagram.com/cthuannn/" class="me-2"><img src="../../../img/logo/logoinsta.png" width="50px"></a>
+                        <a href="https://zalo.me/0706417103" class="me-2"><img src="../../../img/logo/logozalo.png" width="70px"></a>
+                        <a href="https://www.messenger.com/t/7425115730861463" class="me-2"><img src="../../../img/logo/logomess.png" width="50px"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
